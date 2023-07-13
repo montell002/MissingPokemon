@@ -79,6 +79,12 @@ h1 {
     font-size: 54px;
 }
 
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}
+
 @media (max-width: 576px) {
     .container {
         padding: 10px;
@@ -100,6 +106,10 @@ h1 {
 
     .h1 {
         font-size: 14px;
+    }
+
+    .h2 {
+        font-size: 12px;
     }
 
     .card-title {

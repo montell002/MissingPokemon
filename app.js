@@ -15,6 +15,7 @@
 // }
 
 const pokedex = document.querySelector("#pokedex");
+const missingPokemon = document.querySelector("#missingCount");
 
 const fetchPokemon = () => {
 
@@ -27,7 +28,7 @@ const fetchPokemon = () => {
         const pokemon = results.map((data) => ({
             name: data.name,
             id: data.id,
-            image: data.sprites['front_default'],
+            image: data.sprites['other']['official-artwork']['front_default'],
             type: data.types.map(type => type.type.name).join(', ')
         }));
         displayPokemon(pokemon);
@@ -46,3 +47,10 @@ const displayPokemon = (pokemon) => {
 }
 
 fetchPokemon()
+
+const countMissing = function () {
+    console.log(missing.length);
+    missingPokemon.innerHTML = `Missing: ${missing.length}`
+}
+
+countMissing()
