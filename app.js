@@ -1,19 +1,3 @@
-// const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
-// const container = document.querySelector('#container');
-
-
-// for (let list of missing) {
-//     const pokemon = document.createElement('div');
-//     pokemon.classList.add('pokemon')
-//     const label = document.createElement('span');
-//     label.innerText = `#${list}`;
-//     const newImg = document.createElement('img');
-//     newImg.src = `${baseURL}${list}.png`;
-//     pokemon.appendChild(newImg);
-//     pokemon.appendChild(label);
-//     container.appendChild(pokemon);
-// }
-
 const pokedex = document.querySelector("#pokedex");
 const missingPokemon = document.querySelector("#missingCount");
 
